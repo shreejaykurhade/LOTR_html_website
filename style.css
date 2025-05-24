@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b1b;
+  color: #ddd;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#header-img {
+  height: auto;
+  width: clamp(80px, 10vw, 120px);
+  margin: 15px;
+  display: block;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px gold;
+  gap: 20px;
+}
+
+.intro-img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  border: 1px solid grey;
+  border-radius: 20px;
+  box-shadow: 0 0 20px white;
+}
+
+.intro-descrip {
+  flex: 1;
+  min-width: 0;
+}
+
+#intro-descrip {
+  margin: 0;
+  font-size: clamp(14px, 2vw, 16px);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 5px;
+  }
+
+  .intro-img {
+    width: 100%;
+    max-width: 600px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .intro-image {
+    max-width: 280px;
+    flex: 1;
+    min-width: 250px;
+  }
+
+  #intro-descrip {
+    font-size: clamp(15px, 2.5vw, 17px);
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  #header-img {
+    width: clamp(60px, 15vw, 100px);
+    margin: 10px;
+  }
+
+  .intro {
+    margin: 5px;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .intro-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-image {
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  #intro-descrip {
+    font-size: clamp(13px, 3.5vw, 16px);
+    text-align: left;
+  }
+
+  /* Adjust inline styles for mobile */
+  blockquote {
+    margin: 10px 0 !important;
+    padding: 10px !important;
+  }
+
+  mark {
+    padding: 3px !important;
+    word-break: break-word;
+  }
+
+  code {
+    word-break: break-all;
+    font-size: 12px;
+  }
+}
+
+/* Extra small mobile styles */
+@media screen and (max-width: 320px) {
+  .intro {
+    padding: 8px;
+    margin: 3px;
+  }
+
+  #intro-descrip {
+    font-size: 12px;
+  }
+
+  .intro-image {
+    border-radius: 10px;
+  }
+}
+
+/* Large desktop styles */
+@media screen and (min-width: 1200px) {
+  .intro-img {
+    max-width: 500px;
+  }
+
+  .intro-image {
+    max-width: 500px;
+  }
+}
