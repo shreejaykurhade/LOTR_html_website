@@ -13,6 +13,13 @@ body {
   padding: 0 10px;
 }
 
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 #header-img {
   height: auto;
   width: clamp(80px, 10vw, 120px);
