@@ -179,7 +179,7 @@ body {
   font-size: clamp(24px, 5vw, 48px);
   text-align: center;
 
-  font-family: 'Cinzel', serif; 
+  font-family: 'Uncial Antiqua', serif;
   text-shadow:
     0 0 5px black,
     0 0 10px black,
@@ -193,7 +193,7 @@ body {
 
 .ring-image {
   position: absolute;
-  top: 20%;           
+  top: 15%;           
   left: 50%;
   transform: translateX(-50%) rotate(15deg);
   width: 10vw;        
@@ -298,9 +298,6 @@ body {
   z-index: 4;
   box-shadow: 0 0 10px crimson;
 }
-
-
-
 
 
 /* Tablet styles */
