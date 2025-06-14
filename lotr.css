@@ -84,29 +84,10 @@ body {
   font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
-  color: transparent; 
-  background: linear-gradient(45deg, #ff7300, #ff3f00, #ff4500, #ff0000);
-  background-clip: text;
-  -webkit-background-clip: text; 
+  color:goldenrod;
   letter-spacing: 2px;
   text-align: center;
-  text-shadow: 0 0 10px rgba(255, 69, 0, 0.8), 0 0 20px rgba(255, 69, 0, 0.6), 0 0 30px rgba(255, 69, 0, 0.4);
-  animation: flame-animation 1.5s ease-in-out infinite;
 }
-
-/* Fiery Flickering Animation */
-@keyframes flame-animation {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(180deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
 
 .cardContainer {
   display: flex;
