@@ -152,7 +152,7 @@ body {
   justify-content: center; 
   align-items: center;     
   height: 80vh;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .potrait{
@@ -172,7 +172,7 @@ body {
 
 .mordor-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: crimson;
@@ -193,7 +193,7 @@ body {
 
 .ring-image {
   position: absolute;
-  top: 30%;           
+  top: 20%;           
   left: 50%;
   transform: translateX(-50%) rotate(15deg);
   width: 10vw;        
@@ -208,11 +208,99 @@ body {
   margin: 0;
   padding: 0;
   display: block;
-  width: 50%;
+  width: 100%;
   max-width: 400px;
   height: auto;
   
 }
+
+
+
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: end;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 100px;
+}
+
+.poster-wrapper {
+  position: relative;
+  width: clamp(180px, 20vw, 260px);
+  aspect-ratio: 3/4;
+  display: grid;
+  place-items: end center;
+}
+
+.wanted-poster {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.character-standing {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  bottom: 6%;
+}
+
+/* 🪙 Bounty Text Styling */
+.bounty-text {
+  position: absolute;
+  bottom: 90%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Special Elite', serif;
+  font-size: clamp(14px, 2vw, 22px);
+  color: #5e2d1e;
+  text-shadow:
+    1px 1px #00000080,
+    0 0 3px #3b1c10;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 3;
+}
+
+/* Marked as Claimed */
+.claimed .claimed-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  font-family: 'Special Elite', serif;
+  font-size: clamp(20px, 3vw, 40px);
+  color: crimson;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.3em 0.6em;
+  border: 2px solid crimson;
+  text-shadow: 1px 1px black;
+  z-index: 5;
+  pointer-events: none;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+/* Red X Slash */
+.claimed .claimed-cross {
+  position: absolute;
+  width: 140%;
+  height: 3px;
+  background: crimson;
+  top: 50%;
+  left: -20%;
+  transform: rotate(-45deg);
+  z-index: 4;
+  box-shadow: 0 0 10px crimson;
+}
+
+
+
 
 
 /* Tablet styles */
