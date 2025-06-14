@@ -9,7 +9,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 10px;
 }
 
@@ -72,12 +72,8 @@ body {
 
 .container2 {
   max-width: 1200px;
-  margin: 20px auto;
-  padding: 30px 20px;
-  margin-top: 50px;
-  border: 2px solid goldenrod;
-  border-radius: 10px;
-  box-shadow: 0 0 20px gold;
+  margin: 30px auto;
+  padding: 0 10px;
 }
 
 .fiery-text {
@@ -93,7 +89,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;;
+  gap: 50px;;
 }
 
 .card {
@@ -120,10 +116,10 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid goldenrod;
+  border: 5px solid white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgb(255, 255, 255);
   background-color: #ffffff;
 }
 
@@ -135,7 +131,7 @@ body {
 
 .card-content {
   padding: 5px;
-  color: goldenrod;
+  color: black;
 }
 
 .card-back {
@@ -156,7 +152,7 @@ body {
   justify-content: center; 
   align-items: center;     
   height: 80vh;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .potrait{
