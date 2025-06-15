@@ -334,5 +334,21 @@ With his new HQ in place, Sauron has reportedly begun planning a <b>Mordor-theme
     </footer>
 
 </body>
+<script>
+  const slider = document.querySelector('.review-slider');
+  let isPaused = false;
+
+  let scrollInterval = setInterval(() => {
+    if (!isPaused) {
+      slider.scrollLeft += 1;
+      if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+        slider.scrollLeft = 0; // Reset loop
+      }
+    }
+  }, 20);
+
+  slider.addEventListener('mouseenter', () => isPaused = true);
+  slider.addEventListener('mouseleave', () => isPaused = false);
+</script>
 
 </html>
