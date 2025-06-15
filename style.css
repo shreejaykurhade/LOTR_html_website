@@ -299,7 +299,6 @@ body {
   box-shadow: 0 0 10px crimson;
 }
 
-/* Container with parchment medieval styling */
 .container5 {
   background-image: url('./assets/images/parchment-bg.jpg');
   background-size: cover;
@@ -315,7 +314,6 @@ body {
   border: 3px solid #5e2d1e;
 }
 
-/* Grid layout for each lore block */
 .lore-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -328,7 +326,6 @@ body {
   grid-template-columns: 2fr 1fr;
 }
 
-/* Responsive layout for small screens */
 @media (max-width: 768px) {
   .lore-section,
   .lore-section.reverse {
@@ -337,7 +334,6 @@ body {
   }
 }
 
-/* Image styling */
 .lore-img {
   width: clamp(200px, 30vw, 300px);
   min-width: 180px;
@@ -346,12 +342,10 @@ body {
   justify-self: center;
 }
 
-/* Text content area */
 .lore-content {
   font-family: 'Uncial Antiqua', serif;
 }
 
-/* Heading styling */
 .lore-title {
   font-size: clamp(20px, 3vw, 36px);
   margin-bottom: 1rem;
@@ -359,13 +353,103 @@ body {
   text-shadow: 1px 1px #dcc9a3;
 }
 
-/* Paragraph text */
 .lore-content p {
   font-size: clamp(14px, 1.5vw, 18px);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
+/* Container 6 - Base Styling */
+.container6 {
+  background-image: url('./assets/images/parchment-bg.jpg'); /* parchment-style background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px #00000088;
+  margin: 2rem auto;
+  max-width: 1100px;
+  color: #2e1a09;
+  font-family: 'Uncial Antiqua', serif;
+  border: 3px solid #5e2d1e;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.slider-title {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: clamp(22px, 3vw, 32px);
+  text-align: center;
+  color: #4a1e0b;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px #e6d2b5;
+}
+
+/* Slider Wrapper */
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Animated Horizontal Slider */
+.review-slider {
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollSlider 30s linear infinite;
+  width: max-content;
+}
+
+/* Individual Review Card */
+.review-card {
+  min-width: 240px;
+  background: #f5e3c3;
+  border: 3px solid #5e2d1e;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 12px #00000055;
+  font-family: 'Special Elite', serif;
+  color: #3b1f0d;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Card Title */
+.review-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #5e2d1e;
+}
+
+/* Rating Stars */
+.rating {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #00000066;
+}
+
+/* Scrolling Animation */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .review-card {
+    min-width: 180px;
+    font-size: 0.9rem;
+  }
+}
 
 
 /* Tablet styles */
