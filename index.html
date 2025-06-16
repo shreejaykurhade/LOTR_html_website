@@ -18,7 +18,7 @@
 
 
 
-    <div class="container">
+    <div class="container1">
         <div class="navbar">
             <a href="index.html"><img id="header-img" src="assets/images/title.png" alt="Lord Of The Rings"></a>
         </div>
@@ -258,75 +258,6 @@ With his new HQ in place, Sauron has reportedly begun planning a <b>Mordor-theme
         </div>
     </div>
 
- <div class="container6">
-  <h2 class="slider-title">Middle-earth Yelp Reviews</h2>
-  <div class="slider-wrapper">
-    <div class="review-slider">
-
-      <div class="review-card">
-        <h3>The Shire</h3>
-        <p>"A tranquil haven of pies, pipeweed, and perpetual tea time. <br/>If you're looking to avoid adventure and just enjoy elevenses with second breakfast,<br/> this is the place. Excellent hospitality and warm hearths."</p>
-        <div class="rating">★★★★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Mount Doom</h3>
-        <p>"Extremely poor ventilation.<br> Staff includes only a giant flaming eyeball that stares constantly.<br> Also, my ring melted without consent. Zero amenities, <br>but great if you're into volcanic vibes."</p>
-        <div class="rating">★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Rivendell</h3>
-        <p>"Elegant, quiet, and the waterfalls lull you into a poetic trance.<br> Elves whisper a lot and everything echoes.<br> Slightly too clean. Food is light, but the wisdom is heavy.<br> Great for spiritual resets."</p>
-        <div class="rating">★★★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Mines of Moria</h3>
-        <p>"Terrible lighting. Dusty halls.<br> Was greeted by a skeleton and chased by a fiery demon.<br> The ambiance is death metal dungeon, which is great for orcs, but not ideal for weekend travelers."</p>
-        <div class="rating">★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Gondor</h3>
-        <p>"Strong walls, royal vibes. Pippin sang me a song that made me cry. <br>The steward was a buzzkill, but Aragorn really brought the place up.<br> No nightlife, but solid stone architecture."</p>
-        <div class="rating">★★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Lothlórien</h3>
-        <p>"Golden trees, timeless stares, and everything smells like ancient flowers.<br> Galadriel’s eyes pierce your soul, but in a nurturing way.<br> Felt like I was in an eternal autumn dream."</p>
-        <div class="rating">★★★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Rohan</h3>
-        <p>"Horses everywhere. Windy but glorious. Mead halls echo with manly songs.<br> Would return just to hear the horn of Helm Hammerhand again.<br> Saddle up and enjoy."</p>
-        <div class="rating">★★★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Isengard</h3>
-        <p>"Used to be charming before Saruman went full dark wizard.<br> Now it’s all gears and grime. <br>The trees have left angry reviews—literally.<br> Do not recommend for nature lovers."</p>
-        <div class="rating">★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Fangorn Forest</h3>
-        <p>"Super slow service, but the trees talk back.<br> If you're patient enough, the Ents might share stories older than time.<br> Great shade, just don’t light a fire or they’ll get emotional."</p>
-        <div class="rating">★★★</div>
-      </div>
-
-      <div class="review-card">
-        <h3>Barad-dûr</h3>
-        <p>"Impressive tower, ominous vibes. <br>Eye contact is constant and unsettling. No elevators. <br>Feels like you're being judged all the time.<br> Great if you like power trips, literally."</p>
-        <div class="rating">★★</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
 
 
     <footer style="text-align: center; margin-top: 3em; padding: 1em; color: white; font-family: 'Georgia', serif;">
@@ -334,21 +265,5 @@ With his new HQ in place, Sauron has reportedly begun planning a <b>Mordor-theme
     </footer>
 
 </body>
-<script>
-  const slider = document.querySelector('.review-slider');
-  let isPaused = false;
-
-  let scrollInterval = setInterval(() => {
-    if (!isPaused) {
-      slider.scrollLeft += 1;
-      if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
-        slider.scrollLeft = 0; // Reset loop
-      }
-    }
-  }, 20);
-
-  slider.addEventListener('mouseenter', () => isPaused = true);
-  slider.addEventListener('mouseleave', () => isPaused = false);
-</script>
 
 </html>
