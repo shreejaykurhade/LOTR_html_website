@@ -326,6 +326,51 @@ body {
   grid-template-columns: 2fr 1fr;
 }
 
+.container6 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 2px solid #5e2d1e;
+  border-radius: 5px;
+  background-color: #f9f3e8;
+  color: #4a1e0b;
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+.name {
+  font-family: 'Uncial Antiqua', serif;
+}
+.email {
+  font-family: 'Uncial Antiqua', serif;
+}
+.message {
+  font-family: 'Uncial Antiqua', serif;
+  resize: vertical;
+}
+button[type="submit"] {
+  padding: 10px;
+  background-color: #5e2d1e;
+  color: #f9f3e8;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(16px, 1.5vw, 20px);
+  cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
   .lore-section,
   .lore-section.reverse {
